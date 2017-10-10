@@ -8,7 +8,7 @@ import axios from 'axios';
  * @type {string}
  */
 
-let addUrl = "http://xd.m.igalaxies.net:11110/";//真正的调用地址
+let addUrl = "http://xxx.com:11110/";//真正的调用地址
 
 /**
  * 下面的mock的本地模拟HTTP请求调用
