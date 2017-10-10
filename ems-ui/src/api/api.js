@@ -94,7 +94,7 @@ export const getreportData = params => { return axios.get(addUrl+`api/device/`+p
  * @param params
  * @returns {Promise.<TResult>|Promise<R>|Promise<R2|R1>}
  */
-export const testUploadApp = params => { return axios.post(`http://10.88.20.84:9001/api/tobacco/app/uploadApp`, params,
+export const testUploadApp = params => { return axios.post(addUrl, params,
     {
         headers: {
             'Content-Type': 'multipart/form-data',
@@ -107,7 +107,7 @@ export const testUploadApp = params => { return axios.post(`http://10.88.20.84:9
  * @param params
  * @returns {Promise.<TResult>|Promise<R2|R1>|Promise<R>}
  */
-export const testQueryAppMess = params => { return axios.post(`http://10.88.20.84:9001/api/tobacco/app/findSysAppSplitPage`, params,
+export const testQueryAppMess = params => { return axios.post(addUrl, params,
     {
         headers: {
             'Content-Type': 'multipart/form-data',
@@ -119,7 +119,7 @@ export const testQueryAppMess = params => { return axios.post(`http://10.88.20.8
  * @param params
  * @returns {Promise<R2|R1>|Promise.<TResult>|Promise<R>}
  */
-export const testSetDefaultVersion = params => { return axios.post(`http://10.88.20.84:9001/api/tobacco/app/updateASysApp2Defaultversion`, params,
+export const testSetDefaultVersion = params => { return axios.post(addUrl, params,
     {
         headers: {
             'Content-Type': 'multipart/form-data',
