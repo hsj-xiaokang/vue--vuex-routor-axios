@@ -11,13 +11,16 @@
 			</el-col>
 			<el-col :span="4" class="userinfo">
 				<el-dropdown trigger="hover">
-					<span class="el-dropdown-link userinfo-inner">
+					<span class="el-icon-menu"></span>
+					<span class="el-dropdown-link userinfo-inner" >
 						<!--<img :src="this.sysUserAvatar" /> -->
 					{{sysUserName}}</span>
-					<span class="el-dropdown-link userinfo-inner">退出登录</span>
-					<el-dropdown-menu slot="dropdown" >
-						<el-dropdown-item  @click.native="logout">退出登录</el-dropdown-item>
-					</el-dropdown-menu>
+					&nbsp;&nbsp;&nbsp;
+					<span class="el-icon-menu"></span>
+					<span class="el-dropdown-link userinfo-inner " @click="logout">退出登录</span>
+				    <!--<el-dropdown-menu slot="dropdown" >-->
+						<!--<el-dropdown-item  @click.native="logout">退出登录</el-dropdown-item>-->
+					<!--</el-dropdown-menu>-->
 				</el-dropdown>
 			</el-col>
 		</el-col>
