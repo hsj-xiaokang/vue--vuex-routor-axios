@@ -36,3 +36,31 @@ cnpm run build
     * routes.js
 * static - static assets //图片一般放在这里
 
+
+
+	            导航菜单 el-menu 组件存在bug  
+				
+				注意此处是elementUI的一个bug,必须修改elementUI的el-menu 组件代码，才会菜单收缩之后可以在一次展开！！！！  
+				
+				修改59行和71行代码  
+				
+			leave(el) {
+            if (!hasClass(el, 'el-menu--collapse')) {
+              addClass(el, 'horizontal-collapse-transition');
+              el.style.width = '230px';//---------------------修改原码第一处① 59
+            } else {
+              addClass(el, 'horizontal-collapse-transition');
+              el.style.width = el.dataset.scrollWidth + 'px';
+            }
+          },
+
+          afterLeave(el) {
+            removeClass(el, 'horizontal-collapse-transition');
+            if (hasClass(el, 'el-menu--collapse')) {
+              el.style.width = el.dataset.scrollWidth + 'px';
+            } else {
+              el.style.width = '230px';//----------------------修改原码第二处② 71
+            }
+            el.style.overflow = el.dataset.oldOverflow;
+          }
+
