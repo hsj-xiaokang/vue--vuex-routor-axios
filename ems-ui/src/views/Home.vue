@@ -14,6 +14,7 @@
 					<span class="el-dropdown-link userinfo-inner">
 						<!--<img :src="this.sysUserAvatar" /> -->
 					{{sysUserName}}</span>
+					<span class="el-dropdown-link userinfo-inner">退出登录</span>
 					<el-dropdown-menu slot="dropdown" >
 						<el-dropdown-item  @click.native="logout">退出登录</el-dropdown-item>
 					</el-dropdown-menu>
