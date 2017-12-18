@@ -38,6 +38,8 @@ cnpm run build
 
 
 
+过渡动画transition :https://segmentfault.com/q/1010000007738500
+
 注意确保在初始化根实例之前注册组件
 
 
