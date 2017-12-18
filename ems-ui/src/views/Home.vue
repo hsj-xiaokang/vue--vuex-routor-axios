@@ -114,7 +114,7 @@
         components: {ElMenu},
         data() {
 			return {
-				sysName:'仓储温湿度监控',
+				sysName:'vue_admin',
 				collapsed:false,
 				sysUserName: '',
 				sysUserAvatar: '',

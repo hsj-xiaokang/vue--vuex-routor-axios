@@ -20,7 +20,7 @@
       <hr class="thr_v" width=490  size=3 noShade />
       <img src="static/prcode.jpg" class="login_img">
       <div class="login_box">
-        <span class="login_box_text">扫描二维码，下载安装设备配置APP</span>
+        <span class="login_box_text">扫描二维码，下载安装vue_admin_APP</span>
       </div>
     </el-form>
   </div>
