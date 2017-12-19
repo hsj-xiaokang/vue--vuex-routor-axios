@@ -8,6 +8,12 @@ import axios from 'axios';
  * @type {string}
  */
 
+/**
+ * 【vue+axios】一个项目学会前端实现登录拦截
+ * 拦截器配置：http://blog.csdn.net/qq673318522/article/details/55506650
+ * @type {string}
+ */
+
 let addUrl = "http://xxx.com:11110/";//真正的调用地址
 
 /**
