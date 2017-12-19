@@ -35,9 +35,15 @@ cnpm run build
     * main.js - main file
     * routes.js
 * static - static assets //图片一般放在这里
+**********************************************************************************************************************************************
+常用的组件库：
+http://blog.csdn.net/zgrkaka/article/details/53897202
 
+iviwui:https://www.iviewui.com/docs/guide/i18n
 
+elementui:http://element-cn.eleme.io/#/zh-CN/component/dropdown
 
+**********************************************************************************************************************************************
 过渡动画transition :https://segmentfault.com/q/1010000007738500
 
 注意确保在初始化根实例之前注册组件
