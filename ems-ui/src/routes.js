@@ -104,7 +104,25 @@ let routes = [
             }
         ]
     },
-
+    {
+        path: '/',
+        component: resolve => require(['./views/Home.vue'], resolve),
+        name: 'vue_admin',
+        iconCls: 'el-icon-menu',//图标样式class
+        hidden: false,
+        havepermission:false,//有没有权限
+        subhidden:false,//为了单一菜单和子菜单的区别
+        children: [
+            {
+                path: '/vue_admin',
+                component: resolve => require(['./views/testVUEX.vue'], resolve),
+                name: 'vue_admin_sub',
+                hidden: false,
+                havepermission:false,//有没有权限
+                children: []
+            }
+        ]
+    },
     // --------------------------------------------------------------静态的路由结束------------------------------------------
 
 ];
