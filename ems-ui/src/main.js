@@ -2,6 +2,8 @@ import babelpolyfill from 'babel-polyfill'
 import Vue from 'vue'
 import App from './App'
 import ElementUI from 'element-ui'
+//国际化
+// import locale from 'element-ui/lib/locale/lang/ja'
 // import 'element-ui/lib/theme-default/index.css'
 import './assets/theme/theme-green/index.css'
 import VueRouter from 'vue-router'
@@ -97,6 +99,7 @@ Vue.filter("statusFilter", function(value) {
     return "未知";
 });
 
+// Vue.use(ElementUI, { locale })
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(Vuex)

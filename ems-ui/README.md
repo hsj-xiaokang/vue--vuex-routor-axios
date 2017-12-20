@@ -41,7 +41,7 @@ cnpm run build
 			    导航菜单 el-menu 组件存在bug
 				注意此处是elementUI的一个bug,必须修改elementUI的el-menu 组件代码，才会菜单收缩之后可以在一次展开！！！！
 				修改59行和71行代码
-				
+
 			leave(el) {
             if (!hasClass(el, 'el-menu--collapse')) {
               addClass(el, 'horizontal-collapse-transition');

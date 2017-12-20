@@ -67,6 +67,8 @@ module.exports = {
             jQuery: "jquery",
             $: "jquery",
             "windows.jQuery": "jquery"
-        })
+        }),
+        //国际化
+        // new webpack.NormalModuleReplacementPlugin(/element-ui[\/\\]lib[\/\\]locale[\/\\]lang[\/\\]zh-CN/, 'element-ui/lib/locale/lang/ja')
     ]
 }

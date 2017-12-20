@@ -227,7 +227,8 @@
             });
             //配合着jQuery搞定菜单的向下的箭头
             $(".el-submenu__icon-arrow").each(function(index){
-                if(index === 0 && $(".el-submenu__icon-arrow").length === 3){//0 1 2排列死的 根据上卖弄的权限菜单得知那些权限菜一级单有值[3是因为每次回删除一个，实际上只会删除第一次3个的状态]
+//                console.log($(this));
+                if(index === 0 && $(".el-submenu__icon-arrow").length === 4){//0 1 2排列死的 根据上卖弄的权限菜单得知那些权限菜一级单有值[3是因为每次回删除一个，实际上只会删除第一次3个的状态]
                     $(this).removeClass("el-submenu__icon-arrow");
                 }
             });
