@@ -50,9 +50,19 @@
           }
 
 
+       /**
+        *     修改了element的一个bug：2207行
+        *     node_modules/element-ui/lib/element-ui.common.js
+        *    var dd = this.$slots.dropdown;
+	        if(dd){
+                var dropdownElm = dd[0].elm;
+                dropdownElm.addEventListener('mouseenter', show);
+                dropdownElm.addEventListener('mouseleave', hide);
+			}
+       */
 				-->
 				<el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleopen" @close="handleclose" @select="handleselect"
-					 unique-opened router v-show="!collapsed">
+					 unique-opened router v-show="!collapsed" default-active="1">
 					<template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
 						<!--不是单独的菜单这样循环子菜单-->
 						<el-submenu :index="index+''" v-if="!item.leaf && item.havepermission" >
